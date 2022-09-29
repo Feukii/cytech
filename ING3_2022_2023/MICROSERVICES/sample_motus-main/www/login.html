@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/jquery-3.6.0.js"></script>
+
+    </head>
+    <body>
+        <p>LOGIN PAGE</p>
+        <form action="">
+            <input id="username">
+            <input type="submit" value="se connecter">
+        </form>
+        
+    </body>
+    
+</html>
+
+<script>
+  
+        
+
+    //document.createElement('div');
+   // while( localStorage.getItem("name") == null) { 
+
+   
+    $( "form" ).submit(function( event ) {
+          event.preventDefault();
+
+        var username = document.getElementById("username").value
+       localStorage.setItem("name", username)
+       //sessionStorage.setItem('name', username)
+      document.location = "index.html"
+        
+    });
+    
+    //}
+  
+    
+    
+</script>
